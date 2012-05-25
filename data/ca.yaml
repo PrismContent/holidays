@@ -6,10 +6,6 @@ months:
   - name: Good Friday
     regions: [ca]
     function: easter(year)-2
-  - name: Easter Sunday
-  	regions: [ca]
-  	function: easter(year)  
-  	type: informal
   - name: Easter Monday
     regions: [ca]
     function: easter(year)+1

@@ -26,6 +26,7 @@ end
   assert_equal 'Victoria Day', Holidays.on(date, :ca)[0][:name]
 end
 
+
 {Date.civil(2007,1,1) => 'Año nuevo', 
  Date.civil(2007,2,5) => 'Día de la Constitución', 
  Date.civil(2007,5,1) => 'Día del Trabajo',
@@ -50,5 +51,6 @@ end
  Date.civil(2008,12,25) => 'Christmas Day'}.each do |date, name|
   assert_equal name, (Holidays.on(date, :us)[0] || {})[:name]
 end
+
   end
 end

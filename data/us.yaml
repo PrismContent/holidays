@@ -8,11 +8,7 @@ months:
   - name: Good Friday
     regions: [us]
     function: easter(year)-2
-    type: informal
-  - name: Easter Sunday
-  	regions: [us]
-  	function: easter(year)  
-  	type: informal
+    type: informal  
   1: 
   - name: New Year's Day
     regions: [us]
@@ -24,7 +20,7 @@ months:
     wday: 1
   - name: Inauguration Day
     function: us_inauguration_day(year)
-    regions: [us_dc]
+    regions: [us_dc]  
   2: 
   - name: Presidents' Day
     week: 3
