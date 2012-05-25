@@ -18,16 +18,16 @@ module Holidays
 
     def self.holidays_by_month
       {
-              0 => [{:function => lambda { |year| Holidays.easter(year)-47 }, :function_id => "easter(year)-47", :type => :informal, :name => "Carnaval", :regions => [:pt]},
+              5 => [{:mday => 1, :name => "Dia do Trabalhador", :regions => [:pt]}],
+      0 => [{:function => lambda { |year| Holidays.easter(year)-47 }, :function_id => "easter(year)-47", :type => :informal, :name => "Carnaval", :regions => [:pt]},
             {:function => lambda { |year| Holidays.easter(year)-2 }, :function_id => "easter(year)-2", :name => "Sexta-feira Santa", :regions => [:pt]},
             {:function => lambda { |year| Holidays.easter(year) }, :function_id => "easter(year)", :name => "Páscoa", :regions => [:pt]}],
-      1 => [{:mday => 1, :name => "Ano Novo", :regions => [:pt]}],
-      4 => [{:mday => 25, :name => "Dia da Liberdade", :regions => [:pt]}],
-      5 => [{:mday => 1, :name => "Dia do Trabalhador", :regions => [:pt]}],
-      6 => [{:mday => 10, :name => "Dia de Portugal", :regions => [:pt]}],
       11 => [{:mday => 1, :name => "Todos os Santos", :regions => [:pt]}],
+      6 => [{:mday => 10, :name => "Dia de Portugal", :regions => [:pt]}],
+      1 => [{:mday => 1, :name => "Ano Novo", :regions => [:pt]}],
       12 => [{:mday => 8, :name => "Imaculada Conceição", :regions => [:pt]},
-            {:mday => 25, :name => "Natal", :regions => [:pt]}]
+            {:mday => 25, :name => "Natal", :regions => [:pt]}],
+      4 => [{:mday => 25, :name => "Dia da Liberdade", :regions => [:pt]}]
       }
     end
   end
