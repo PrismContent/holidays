@@ -25,5 +25,6 @@ end
  Date.civil(2007,5,21), Date.civil(2008,5,19)].each do |date|
   assert_equal 'Victoria Day', Holidays.on(date, :ca)[0][:name]
 end
+
   end
 end
