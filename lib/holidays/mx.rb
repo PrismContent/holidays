@@ -13,7 +13,7 @@ module Holidays
   # All the definitions are available at https://github.com/alexdunae/holidays
   module MX # :nodoc:
     def self.defined_regions
-      [:mx, :mx_pue, :us, :ca, :us,ca]
+      [:mx, :mx_pue, :us, :ca]
     end
 
     def self.holidays_by_month
@@ -24,7 +24,6 @@ module Holidays
             {:mday => 10, :type => :informal, :name => "Día de la Madre", :regions => [:mx]},
             {:mday => 15, :type => :informal, :name => "Día del Maestro", :regions => [:mx]},
             {:wday => 0, :week => 3, :type => :informal, :name => "Father's Day", :regions => [:us, :ca]}],
-      0 => [{:function => lambda { |year| Holidays.easter(year) }, :function_id => "easter(year)", :type => :informal, :name => "Easter Sunday", :regions => [:us,ca]}],
       11 => [{:mday => 1, :type => :informal, :name => "Todos los Santos", :regions => [:mx]},
             {:mday => 2, :type => :informal, :name => "Los Fieles Difuntos", :regions => [:mx]},
             {:wday => 1, :week => 3, :name => "Día de la Revolución", :regions => [:mx]}],

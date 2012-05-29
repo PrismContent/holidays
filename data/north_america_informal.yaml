@@ -2,11 +2,6 @@
 # Updated 2008-11-22.
 --- 
 months:
-  0:
-  - name: Easter Sunday
-    regions: [us,ca]
-    function: easter(year)        
-    type: informal
   2: 
   - name: Groundhog Day
     regions: [us, ca]
